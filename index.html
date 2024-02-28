@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .flex-container{
+      display:flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+
+    }
+    .grid-container{
+      width:721px;
+      height:719px;
+      background-color: #F0F1EC;
+      display:grid;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 20px;
+    }
+
+    .redBox{
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      background-color: #E72F24;
+      border: 7px solid #232629;
+      border-left:none ;
+      border-top: none;
+    }
+    .emptyBox{
+      border: 7px solid #232629;
+      border-left:none ;
+      border-top:none;
+      border-right:none;
+    }
+
+    .emptyBox2{
+      border: 7px solid #232629;
+      border-left:none ;
+      border-top:none;
+      border-bottom:none;
+    }
+
+    .blueBox{
+      grid-column-start: 4;
+      grid-column-end: 5;
+      background-color: #004592;
+      border: 7px solid #232629;
+      border-top: none;
+      border-right: none;
+    }
+
+    .emptyBox3{
+      border: 7px solid #232629;
+      border-top: none;
+      border-left: none;
+    }
+
+    .emptyBox4{
+      border: 7px solid #232629;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+    }
+
+    .emptyBox5{
+      border: 7px solid #232629;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+    }
+    .emptyBox6{
+      border: 7px solid #232629;
+      border-bottom: none;
+      border-right: none;
+    }
+    .emptybox7{
+      border: 7px solid #232629;
+      border-top: none;
+      border-bottom: none;
+      border-left: none;
+    }
+    .yellowBox{
+      background-color: #F9D01E;
+      border: 7px solid #232629;
+      border-top: none;
+      border-bottom: none;
+      border-left: none;
+    }
+    
+    .blackBox{
+      background-color: #232629;
+    }
+    .emptyBox8{
+      border: 7px solid #232629;
+      border-top: none;
+      border-bottom: none;
+      border-right: none;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="flex-container">
+    <div class="grid-container">
+      <div class="redBox"></div>
+      <div class="emptyBox"></div>
+      <div class="emptyBox"></div>
+      <div class="emptyBox"></div>
+      <div class="emptyBox2"></div>
+      <div class="blueBox"></div>
+      <div class="emptyBox3"></div>
+      <div class="emptyBox4"></div> 
+      <div class="emptyBox5"></div> 
+      <div class="emptyBox6"></div>
+      <div class="emptybox7"></div>
+      <div class="yellowBox"></div>
+      <div class="blackBox"></div>
+      <div class="emptyBox8"></div>
+    </div>
+  </div>
+
+</body>
+
+</html>
